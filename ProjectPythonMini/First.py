@@ -37,14 +37,14 @@ class StudentAnalyzer:
             print("⚠️ Student already exists!")
             return
         self.students[name] = Student(name, marks)
-        print("✅ Student added successfully!")
+        print("Student added successfully!")
 
     def view_students(self):
         if not self.students:
             print("No students available.")
             return
         
-        print("\n📋 Student List:")
+        print("\n Student List:")
         for student in self.students.values():
             print(f"{student.name} → {student.marks}")
 
@@ -68,7 +68,7 @@ class StudentAnalyzer:
             return
 
         print("\n" + "-"*30)
-        print("📊 STUDENT REPORT")
+        print("STUDENT REPORT")
         print("-"*30)
 
         avg = self.calculate_average()
@@ -105,7 +105,7 @@ while True:
             marks = int(input("Enter marks: "))
             analyzer.add_student(name, marks)
         except ValueError:
-            print("⚠️ Invalid marks!")
+            print("Invalid marks!")
 
     elif choice == "2":
         analyzer.view_students()
@@ -114,8 +114,8 @@ while True:
         analyzer.generate_report()
 
     elif choice == "4":
-        print("Exiting program... 👋")
+        print("Exiting program... ")
         break
 
     else:
-        print("⚠️ Invalid choice! Try again.")
+        print("Invalid choice! Try again.")
