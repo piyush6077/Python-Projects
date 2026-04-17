@@ -1,0 +1,6 @@
+sort() 
+sort function in python it own loop 
+and here we can also define rule such as ::
+                                        reverse = true 
+                                        key = x: x[-1]
+                                        key = function        #(only reference of function)
