@@ -119,3 +119,22 @@ while True:
 
     else:
         print("Invalid choice! Try again.")
+
+
+################################
+
+s = "abbcd"
+d = {} 
+
+for i in s:
+    d[i] = d.get(i,0) + 1
+    # if i not in d:
+    #     d[i] = 1
+    #     {a:1,b:1,c:1}
+    # else:
+    #     d[i] = d[i] + 1
+    
+    
+print(d)
+
+#{a:1,b:2,c:1,d:1}
